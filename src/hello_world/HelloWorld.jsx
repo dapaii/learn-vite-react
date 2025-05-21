@@ -11,17 +11,23 @@ export default function HelloWorld(){
 
 // multiple component START
 function HeaderHelloWorld() {
+    // JsOnJSX START
+    const text = "Hello World"
     return(
         <>
-            <h1>Hello World</h1>
+            <h1>{text}</h1>
+            {/* atau bisa tambahkan uppercase */}
+            <h1>{text.toUpperCase()}</h1>
         </>
+    // JsOnJSX END
     )
 }
 
 function ParagraphHelloWorld(){
+    const text = "Belajar react pemula"
     return(
         <>
-            <p>Belajar React pemula</p>
+            <p>{text.toLowerCase()}</p>
         </>
     )
 }
