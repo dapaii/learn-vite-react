@@ -6,7 +6,6 @@ export default function HelloWorld(){
             <h1>HelloWorld</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil, ipsa culpa eius pariatur eveniet! Quidem excepturi doloribus alias aspernatur?</p>
         </div>
-        
     )
 }
 
