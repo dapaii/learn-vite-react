@@ -9,17 +9,38 @@ export default function HelloWorld(){
     )
 }
 
-
 // multiple component START
 function HeaderHelloWorld() {
+    // JsOnJSX START
+    const text = "Hello World"
     return(
         <>
-            <h1>Hello World</h1>
+        {/* terlihat seperti double kurawal tapi sebenarnya tidak, kurawal tetap 1 tetapi yang satunya lagi itu object untuk style di jsx menggunakan css */}
+            <h1 style={
+                {
+                    color: "red",
+                    backgroundColor: "aqua"
+                }
+            }>{text}</h1>
+            {/* atau bisa tambahkan uppercase */}
+            <h1>{text.toUpperCase()}</h1>
         </>
-    )
-}
+    // JsOnJSX END
+
 
 function ParagraphHelloWorld(){
+
+    const text = "Belajar react pemula"
+    // perbedaan implementasi pada style untuk object yang dipanggil
+    const style = {
+        color: "blue",
+        backgroundColor: "yellow"
+    }
+
+    return(
+        <>
+            <p style={style}>{text.toLowerCase()}</p>
+
     return(
         <>
             <p>Belajar React pemula</p>
