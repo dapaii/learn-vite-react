@@ -1,3 +1,5 @@
+// jika ingin menggunakan style di jsx menggunakan css tinggal import dan panggil className
+import './HelloWorld.css';
 export default function HelloWorld(){
         // misal props ini sudah ada seperti ini
         const props = {
@@ -32,7 +34,8 @@ function HeaderHelloWorld({text = "tidak ada props"}){
                 }
             }>{text}</h1>
             {/* atau bisa tambahkan uppercase */}
-            <h1>{text.toUpperCase()}</h1>
+            {/* menambahkan style title pada css kedalam tag h1 */}
+            <h1 className='title'>{text.toUpperCase()}</h1>
         </>
     // JsOnJSX END
     )
@@ -46,7 +49,8 @@ function ParagraphHelloWorld({text = "tidak ada props"}){
     }
     return(
         <>
-            <p style={style}>{text.toLowerCase()}</p>
+        {/* menambahkan style content css pada tag p */}
+            <p className='content' style={style}>{text.toLowerCase()}</p>
         </>
     )
 }
