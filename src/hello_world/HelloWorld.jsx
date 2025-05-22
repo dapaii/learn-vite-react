@@ -1,7 +1,5 @@
 // jika ingin menggunakan style di jsx menggunakan css tinggal import dan panggil className
 import './HelloWorld.css';
-
-
 export default function HelloWorld(){
         // misal props ini sudah ada seperti ini
         const props = {
