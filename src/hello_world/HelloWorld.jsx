@@ -15,7 +15,6 @@ function HeaderHelloWorld() {
     const text = "Hello World"
     return(
         <>
-            <h1>{text}</h1>
             {/* atau bisa tambahkan uppercase */}
             <h1>{text.toUpperCase()}</h1>
         </>
