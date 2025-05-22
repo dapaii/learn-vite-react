@@ -26,10 +26,10 @@ function HeaderHelloWorld() {
             <h1>{text.toUpperCase()}</h1>
         </>
     // JsOnJSX END
-    )
-}
+
 
 function ParagraphHelloWorld(){
+
     const text = "Belajar react pemula"
     // perbedaan implementasi pada style untuk object yang dipanggil
     const style = {
@@ -40,6 +40,10 @@ function ParagraphHelloWorld(){
     return(
         <>
             <p style={style}>{text.toLowerCase()}</p>
+
+    return(
+        <>
+            <p>Belajar React pemula</p>
         </>
     )
 }
