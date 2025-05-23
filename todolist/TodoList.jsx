@@ -1,14 +1,31 @@
 import Todo from "./Todo.jsx";
 
 export default function TodoList() {
-  return (
-    <ul>
-      {/* masukan contional dengan props yang tersedia di todolist */}
-      {/* isDeleted akan menghapus / menghilangkan text */}
-      <Todo text="Learn React" isCompleted={false} isDeleted={true} />
-      <Todo text="Learn JavaScript" isCompleted={true} />
-      <Todo text="Learn CSS" isCompleted={false} />
-      <Todo text="Learn HTML" isCompleted={true} />
-    </ul>
-  );
+  const data = [
+    {
+      text: "Learn React",
+      isCOmpleted: false
+    },
+      {
+        text: "Learn JavasScript",
+        isCompleted: true
+      },
+      {
+        text: "Learn CSS",
+        isCompleted: false,
+      },
+      {
+        text: "Learn HTML",
+        isCompleted: true
+      }
+  ]
+
+  const todos = data.map((todo) => <Todo {...todo}/>)
+    
+    return (
+      <ul>
+        {/* collection components */}
+        {todos}
+      </ul>
+    );
 }
