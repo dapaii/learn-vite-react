@@ -4,7 +4,7 @@ export default function Todo({ text, isCompleted, isDeleted = false }) {
   if (isDeleted) {
     return null;
   }else{
-    // update menggunakan ternary operator
+    // update menggunakan LogicalAnd Operator
     return(
       <li>
         {text} {isCompleted && '✅'}
