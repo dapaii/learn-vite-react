@@ -1,5 +1,7 @@
 export default function AllertButton({text, message}){
-  function handleClick(){
+  function handleClick(e){
+    // event object e.target
+    console.log(e.target);
     alert(message);
   }
   
