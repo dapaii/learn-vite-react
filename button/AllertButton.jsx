@@ -1,8 +1,8 @@
-export default function AllertButton({text}){
+export default function AllertButton({text, message}){
   function handleClick(){
-    alert("button clicked")
+    alert(message);
   }
-
+  
   return(
     <button onClick={handleClick}>{text}</button>
   )

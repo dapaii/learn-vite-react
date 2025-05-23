@@ -14,7 +14,7 @@ createRoot(document.getElementById("root")).render(
       <HelloWorld />
       <TodoList />
       <Table />
-      <AllertButton text="click me"/>
+      <AllertButton text="click me" message="you click me" />
     </Container>
   </StrictMode>
 );
