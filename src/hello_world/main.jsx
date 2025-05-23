@@ -4,6 +4,7 @@ import { StrictMode } from "react";
 import Container from "./Container";
 import TodoList from "../../todolist/TodoList";
 import Table from "../../table/Table";
+import AllertButton from "../../button/AllertButton";
 
 // createRoom dibuat untuk memanggil component yang akan dimunculkan
 createRoot(document.getElementById("root")).render(
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
       <HelloWorld />
       <TodoList />
       <Table />
+      <AllertButton text="click me"/>
     </Container>
   </StrictMode>
 );
