@@ -6,3 +6,6 @@ export default function TodoList() {
       {/* masukan contional dengan props yang tersedia di todolist */}
       {/* isDeleted akan menghapus / menghilangkan text */}
       <Todo text="Learn React" isCompleted={false} isDeleted={true} />
+    </ul>
+);
+}
