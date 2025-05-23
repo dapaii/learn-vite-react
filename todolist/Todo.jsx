@@ -3,14 +3,12 @@ export default function Todo({ text, isCompleted, isDeleted = false }) {
   // conditional rendering
   if (isDeleted) {
     return null;
-  } else if (isCompleted) {
-    return (
+  }else{
+    // update menggunakan ternary operator
+    return(
       <li>
-        {/* jika complate maka text akan dicoret */}
-        <del>{text}</del>
+        {isCOmpelted ? <dev>{text}</dev> : {text}}
       </li>
-    );
-  } else {
-    return <li>{text}</li>;
+    )
   }
 }
