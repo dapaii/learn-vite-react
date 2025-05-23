@@ -1,14 +1,43 @@
 import Todo from "./Todo.jsx";
 
 export default function TodoList() {
-  return (
-    <ul>
-      {/* masukan contional dengan props yang tersedia di todolist */}
-      {/* isDeleted akan menghapus / menghilangkan text */}
-      <Todo text="Learn React" isCompleted={false} isDeleted={true} />
-      <Todo text="Learn JavaScript" isCompleted={true} />
-      <Todo text="Learn CSS" isCompleted={false} />
-      <Todo text="Learn HTML" isCompleted={true} />
-    </ul>
-  );
+  const data = [
+    {
+      // add komponent id for component key
+      id: 1,
+      text: "Learn React",
+      isCOmpleted: false
+    },
+      {
+        id: 2,
+        text: "Learn JavasScript",
+        isCompleted: true
+      },
+      {
+        id: 3,
+        text: "Learn CSS",
+        isCompleted: false,
+      },
+      {
+        id: 4,
+        text: "Learn HTML",
+        isCompleted: true
+      },
+      {
+        id: 5,
+        text: "Learn NodeJS",
+        isCompleted: true
+      }
+  ]
+
+  const todos = data.map((todo) => <Todo key={todo.id} {...todo}/>)
+    return (
+      <ul>
+        {/* collection components */}
+        {/* update component for component key */}
+        {data.map((todo) => (
+          <Todo key={todo.id} {...todo}/>
+        ))}
+      </ul>
+    );
 }
