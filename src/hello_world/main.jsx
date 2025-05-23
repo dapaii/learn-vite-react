@@ -3,6 +3,7 @@ import HelloWorld from "./HelloWorld";
 import { StrictMode } from "react";
 import Container from "./Container";
 import TodoList from "../../todolist/TodoList";
+import Table from "../../table/Table";
 
 // createRoom dibuat untuk memanggil component yang akan dimunculkan
 createRoot(document.getElementById("root")).render(
@@ -11,6 +12,7 @@ createRoot(document.getElementById("root")).render(
     <Container>
       <HelloWorld />
       <TodoList />
+      <Table />
     </Container>
   </StrictMode>
 );
