@@ -8,6 +8,7 @@ import AllertButton from "../button/AllertButton";
 import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
 import SearchForm from "../form/SearchForm";
+import SayHelloForm from "../form/sayHelloForm";
 
 // createRoom dibuat untuk memanggil component yang akan dimunculkan
 createRoot(document.getElementById("root")).render(
@@ -28,6 +29,8 @@ createRoot(document.getElementById("root")).render(
         }}/>
 
         <SearchForm/>
+
+        <SayHelloForm/>
     </Container>
   </StrictMode>
 );
