@@ -1,5 +1,6 @@
 // sideE efffect terjadi di trigger oleh event handler
 export default function SayHelloForm(){
+  // DOM MAIPULATION SECARA MANUAL harusnya pake state
   function handleClick(e){
     e.preventDefault();
     const name = document.getElementById("inputName").value;
