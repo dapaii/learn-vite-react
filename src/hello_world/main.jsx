@@ -7,6 +7,7 @@ import Table from "../../table/Table";
 import AllertButton from "../button/AllertButton";
 import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
+import SearchForm from "../form/SearchForm";
 
 // createRoom dibuat untuk memanggil component yang akan dimunculkan
 createRoot(document.getElementById("root")).render(
@@ -25,6 +26,8 @@ createRoot(document.getElementById("root")).render(
           e.stopPropagation();
           alert("Toolbar clicked");
         }}/>
+
+        <SearchForm/>
     </Container>
   </StrictMode>
 );
