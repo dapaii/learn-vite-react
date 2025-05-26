@@ -9,10 +9,7 @@ import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
 import SearchForm from "../form/SearchForm";
 import SayHelloForm from "../form/sayHelloForm";
-<<<<<<< HEAD
-=======
 import Counter from "../form/counter";
->>>>>>> learn-vite/state
 
 // createRoom dibuat untuk memanggil component yang akan dimunculkan
 createRoot(document.getElementById("root")).render(
@@ -34,10 +31,7 @@ createRoot(document.getElementById("root")).render(
 
         <SearchForm/>
         <SayHelloForm/>
-<<<<<<< HEAD
-=======
         <Counter/>
->>>>>>> learn-vite/state
     </Container>
   </StrictMode>
 );
